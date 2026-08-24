@@ -1,0 +1,210 @@
+:root {
+    --bg-dark: #0f1419;
+    --card-bg: #1a232a;
+    --accent-green: #00be51;
+    --text-color: #ffffff;
+    --border-blue: #0072ce;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-color);
+}
+
+/* Control global para evitar que cualquier imagen desborde el diseño */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0b0e11;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.logo img, .federation-logo img {
+    height: 35px;
+    width: auto;
+}
+
+.search-bar input {
+    background-color: #1e2830;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: white;
+    width: 250px;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hero */
+.hero {
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--border-blue);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Sections */
+.section {
+    margin-top: 30px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Carousel & Cards */
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.matches-grid {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto; /* Permite scroll horizontal */
+    width: 100%;
+    padding: 10px 0;
+}
+
+.match-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 15px;
+    min-width: 210px;
+    max-width: 220px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.league-name {
+    font-size: 0.8rem;
+    color: #a0a0a0;
+    margin-bottom: 15px;
+}
+
+.teams {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Fuerza el tamaño estricto de los escudos dentro de las tarjetas */
+.team-logo {
+    width: 45px !important;
+    height: 45px !important;
+    object-fit: contain;
+}
+
+.prob-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+}
+
+.prob-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #333;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.prob-fill {
+    height: 100%;
+    background-color: var(--accent-green);
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.btn-card-left, .btn-card-right {
+    flex: 1;
+    height: 25px;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-card-left { background-color: #1e2830; }
+.btn-card-right { background-color: var(--accent-green); }
+
+/* Navigation Buttons */
+.nav-btn {
+    background-color: #2a343d;
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+}
+
+.nav-btn.left { left: -15px; }
+.nav-btn.right { right: -15px; }
+
+/* Tournament Banner */
+.tournament-banner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 15px;
+}
