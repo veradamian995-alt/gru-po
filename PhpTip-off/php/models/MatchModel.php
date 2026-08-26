@@ -6,8 +6,8 @@ class MatchModel {
                 'league' => 'Liga Profesional',
                 'home_team' => 'Banfield',
                 'away_team' => 'Belgrano',
-                'home_badge' => 'img/banfield.png',
-                'away_badge' => 'img/belgrano.png',
+                'home_badge' => 'PhpTip-off/img/banfield.png',
+                'away_badge' => 'PhpTip-off/img/belgrano.png',
                 'home_prob' => 40,
                 'away_prob' => 60
             ],
@@ -15,8 +15,8 @@ class MatchModel {
                 'league' => 'Liga Profesional',
                 'home_team' => 'Lanús',
                 'away_team' => 'Talleres',
-                'home_badge' => 'img/lanus.png',
-                'away_badge' => 'img/talleres.png',
+                'home_badge' => 'PhpTip-off/img/lanus.png',
+                'away_badge' => 'PhpTip-off/img/talleres.png',
                 'home_prob' => 68,
                 'away_prob' => 32
             ],
@@ -24,8 +24,8 @@ class MatchModel {
                 'league' => 'Liga Profesional',
                 'home_team' => 'Racing',
                 'away_team' => 'Banfield',
-                'home_badge' => 'img/racing.png',
-                'away_badge' => 'img/banfield.png',
+                'home_badge' => 'PhpTip-off/img/racing.png',
+                'away_badge' => 'PhpTip-off/img/banfield.png',
                 'home_prob' => 69,
                 'away_prob' => 31
             ],
@@ -33,8 +33,8 @@ class MatchModel {
                 'league' => 'Liga Profesional',
                 'home_team' => 'Unión',
                 'away_team' => 'Central Córdoba',
-                'home_badge' => 'img/union.png',
-                'away_badge' => 'img/central.png',
+                'home_badge' => 'PhpTip-off/img/union.png',
+                'away_badge' => 'PhpTip-off/img/central.png',
                 'home_prob' => 38,
                 'away_prob' => 62
             ]

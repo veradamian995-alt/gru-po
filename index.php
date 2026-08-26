@@ -1,5 +1,5 @@
 <?php
-require_once 'php/models/MatchModel.php';
+require_once  'PhpTip-off/php/models/MatchModel.php';
 $matches = MatchModel::getUpcomingMatches();
 ?>
 <!DOCTYPE html>
@@ -8,14 +8,14 @@ $matches = MatchModel::getUpcomingMatches();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIP-OFF - Predicciones</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="PhpTip-off/css/index.css">
 </head>
 <body>
 
     <!-- Header -->
     <header class="header">
         <div class="logo">
-            <img src="img/img/logo.png" alt="Tip-Off Logo">
+            <img src="PhpTip-off/img/img/logo.png" alt="Tip-Off Logo">
         </div>
         <div class="search-bar">
             <input type="text" placeholder="Buscar...">
@@ -65,11 +65,11 @@ $matches = MatchModel::getUpcomingMatches();
         <section class="section text-center">
             <h2 class="section-title">Predicion de Torneo</h2>
             <div class="tournament-banner">
-                <img src="img/libertadores.jpg" alt="CONMEBOL Libertadores">
+                <img src="PhpTip-off/img/libertadores.jpg" alt="CONMEBOL Libertadores">
             </div>
         </section>
     </main>
 
-    <script src="js/main.js"></script>
+    <script src="PhpTip-off/js/main.js"></script>
 </body>
 </html>
