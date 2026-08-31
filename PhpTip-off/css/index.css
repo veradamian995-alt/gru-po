@@ -1,8 +1,10 @@
 :root {
-    --bg-dark: #0f1419;
-    --card-bg: #1a232a;
+    --bg-dark: #0b0e11;
+    --card-bg: #161e24;
+    --panel-bg: #1c262f;
     --accent-green: #00be51;
     --text-color: #ffffff;
+    --text-muted: #a0a0a0;
     --border-blue: #0072ce;
 }
 
@@ -28,30 +30,23 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #0b0e11;
+    padding: 12px 30px;
+    background-color: #050709;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.logo img, .federation-logo img {
-    height: 35px;
+.logo img {
+    height: 45px;
     width: auto;
 }
 
 .search-bar input {
-    background-color: #1e2830;
+    background-color: #1a232a;
     border: none;
     padding: 8px 15px;
     border-radius: 4px;
     color: white;
     width: 250px;
+    outline: none;
 }
 
 /* Container */
@@ -61,36 +56,46 @@ img {
     padding: 20px;
 }
 
-/* Hero */
+/* Hero Banner */
 .hero {
-    height: 320px;
+    height: 300px;
     background-size: cover;
     background-position: center;
-    border: 2px solid var(--border-blue);
-    border-radius: 4px;
+    border-radius: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero-content h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .btn-primary {
     background-color: #ffffff;
     color: #000;
     border: none;
-    padding: 12px 24px;
+    padding: 10px 22px;
     font-weight: bold;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
-/* Sections */
+/* Secciones Generales */
 .section {
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 .section-title {
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
@@ -98,27 +103,20 @@ img {
     text-align: center;
 }
 
-/* Carousel & Cards */
-.carousel-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
+/* Grid Horizontal de Próximos Partidos */
 .matches-grid {
     display: flex;
     gap: 15px;
     overflow-x: auto;
-    width: 100%;
-    padding: 10px 0;
+    padding-bottom: 10px;
 }
 
 .match-card {
     background-color: var(--card-bg);
     border-radius: 8px;
     padding: 15px;
-    min-width: 210px;
-    max-width: 220px;
+    min-width: 200px;
+    width: 210px;
     flex: 0 0 auto;
     display: flex;
     flex-direction: column;
@@ -126,9 +124,9 @@ img {
 }
 
 .league-name {
-    font-size: 0.8rem;
-    color: #a0a0a0;
-    margin-bottom: 15px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
 }
 
 .teams {
@@ -155,7 +153,7 @@ img {
 .prob-bar {
     width: 100%;
     height: 6px;
-    background-color: #333;
+    background-color: #2a343d;
     border-radius: 3px;
     overflow: hidden;
 }
@@ -168,8 +166,40 @@ img {
 /* Tournament Banner */
 .tournament-banner img {
     width: 100%;
-    max-height: 400px;
+    max-height: 380px;
     object-fit: cover;
-    border-radius: 15px;
-    margin-top: 15px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+/* Lista Extendida Vertical */
+.matches-list-extended {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.match-extended-row {
+    display: flex;
+    gap: 15px;
+    align-items: stretch;
+}
+
+.match-extended-panel {
+    background-color: var(--panel-bg);
+    border-radius: 8px;
+    flex-grow: 1;
+    min-height: 140px;
+}
+
+/* Footer */
+.footer {
+    max-width: 1000px;
+    margin: 40px auto 20px auto;
+    padding: 0 20px;
+}
+
+.footer h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
 }
