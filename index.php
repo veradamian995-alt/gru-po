@@ -1,5 +1,5 @@
 <?php
-require_once  'PhpTip-off/php/models/MatchModel.php';
+require_once 'PhpTip-off/php/models/MatchModel.php';
 $matches = MatchModel::getUpcomingMatches();
 ?>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ $matches = MatchModel::getUpcomingMatches();
     <!-- Header -->
     <header class="header">
         <div class="logo">
-            <img src="PhpTip-off/img/img/logo.png" alt="Tip-Off Logo">
+            <img src="PhpTip-off/img/logo.png" alt="Tip-Off Logo">
         </div>
         <div class="search-bar">
             <input type="text" placeholder="Buscar...">
@@ -23,17 +23,13 @@ $matches = MatchModel::getUpcomingMatches();
     </header>
 
     <main class="container">
-        <!-- Hero Banner -->
-        <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/stadium.jpg');">
-            <button class="btn-primary">Ver Predicciones de Hoy</button>
-        </section>
+        <!-- Hero Banner (Solo imagen de la cancha) -->
+        <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('PhpTip-off/img/stadium.jpg');"></section>
 
         <!-- Próximos Partidos -->
         <section class="section">
             <h2 class="section-title">PROXIMOS PARTIDOS DE FUTBOL</h2>
             <div class="carousel-container">
-                <button class="nav-btn left" id="btn-prev">&#10094;</button>
-                
                 <div class="matches-grid" id="matches-grid">
                     <?php foreach ($matches as $match): ?>
                         <div class="match-card">
@@ -49,15 +45,9 @@ $matches = MatchModel::getUpcomingMatches();
                             <div class="prob-bar">
                                 <div class="prob-fill" style="width: <?= $match['home_prob'] ?>%;"></div>
                             </div>
-                            <div class="card-buttons">
-                                <button class="btn-card-left"></button>
-                                <button class="btn-card-right"></button>
-                            </div>
                         </div>
                     <?php endforeach; ?>
                 </div>
-
-                <button class="nav-btn right" id="btn-next">&#10095;</button>
             </div>
         </section>
 

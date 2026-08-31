@@ -18,7 +18,6 @@ body {
     color: var(--text-color);
 }
 
-/* Control global para evitar que cualquier imagen desborde el diseño */
 img {
     max-width: 100%;
     height: auto;
@@ -109,7 +108,7 @@ img {
 .matches-grid {
     display: flex;
     gap: 15px;
-    overflow-x: auto; /* Permite scroll horizontal */
+    overflow-x: auto;
     width: 100%;
     padding: 10px 0;
 }
@@ -139,7 +138,6 @@ img {
     margin-bottom: 15px;
 }
 
-/* Fuerza el tamaño estricto de los escudos dentro de las tarjetas */
 .team-logo {
     width: 45px !important;
     height: 45px !important;
@@ -159,7 +157,6 @@ img {
     height: 6px;
     background-color: #333;
     border-radius: 3px;
-    margin-bottom: 15px;
     overflow: hidden;
 }
 
@@ -167,38 +164,6 @@ img {
     height: 100%;
     background-color: var(--accent-green);
 }
-
-.card-buttons {
-    display: flex;
-    gap: 10px;
-    width: 100%;
-}
-
-.btn-card-left, .btn-card-right {
-    flex: 1;
-    height: 25px;
-    border-radius: 4px;
-    border: none;
-}
-
-.btn-card-left { background-color: #1e2830; }
-.btn-card-right { background-color: var(--accent-green); }
-
-/* Navigation Buttons */
-.nav-btn {
-    background-color: #2a343d;
-    color: white;
-    border: none;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    z-index: 10;
-}
-
-.nav-btn.left { left: -15px; }
-.nav-btn.right { right: -15px; }
 
 /* Tournament Banner */
 .tournament-banner img {
