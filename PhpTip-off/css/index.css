@@ -203,3 +203,72 @@ img {
     font-size: 1.4rem;
     font-weight: bold;
 }
+/* Estilos de la sección de Formularios al final */
+.forms-section {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-blue);
+}
+
+.forms-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.form-card {
+    background-color: var(--card-bg);
+    border: 1px solid #273440;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.form-card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: var(--accent-green);
+    text-transform: uppercase;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.form-group input, .form-group select {
+    background-color: #1a232a;
+    border: 1px solid #2a3642;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.85rem;
+    outline: none;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: var(--accent-green);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--accent-green);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.btn-submit:hover {
+    background-color: #009e43;
+}
